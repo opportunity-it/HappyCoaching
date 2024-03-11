@@ -68,6 +68,33 @@ a {
     border: transparent;
     color: #FFFFFF;
     background-color: #20AD96;
+
+    animation-name: buttonChange;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes buttonChange {
+    0% {
+        transform: rotate(0deg) scale(0.5);
+        background-color: pink;
+    }
+
+    33% {
+        transform: rotate(360deg) scale(1.5);
+        background-color: blue;
+    }
+
+    66% {
+        transform: rotate(720deg) scale(2);
+        background-color: orange;
+    }
+
+    100% {
+        transform: rotate(1080deg) scale(2.5);
+        background-color: #20AD96;
+    }
 }
 
 @media screen and (min-width:1280px) {
